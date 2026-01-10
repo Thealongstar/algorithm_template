@@ -16,7 +16,7 @@ void counting_sort(int arr[],int l,int r)
 
     for(int i=l;i<=r;i++)val[arr[i]]++;
     for(int i=1;i<=N;i++)val[i]+=val[i-1];
-    for(int i=r;i>=l;i--)temp[val[arr[i]]--]=arr[i];
+    for(int i=r;i>=l;i--)temp[--val[arr[i]]]=arr[i];
 
     return;
 }
@@ -29,7 +29,7 @@ int main(void)
 
     counting_sort(arr,0,n-1);
 
-    for(int i=0;i<n;i++)printf("%d ",temp[i+1]);
+    for(int i=0;i<n;i++)printf("%d ",temp[i]);
 
     return 0;
 }
