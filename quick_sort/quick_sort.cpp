@@ -1,3 +1,5 @@
+/*快速排序 时间复杂度nlogn 空间复杂度1*/
+/*板子升序*/
 #include<iostream>
 
 using namespace std;
