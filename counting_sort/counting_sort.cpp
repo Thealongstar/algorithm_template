@@ -12,13 +12,13 @@ int temp[N];
 
 void counting_sort(int arr[],int l,int r)
 {
-    if(l>=r)return;
+    if(l>=r)return ;
 
     for(int i=l;i<=r;i++)val[arr[i]]++;
-    for(int i=1;i<=N;i++)val[i]+=val[i-1];
-    for(int i=r;i>=l;i--)temp[--val[arr[i]]]=arr[i];
+    for(int i=1;i<N;i++)val[i]=val[i-1];
+    for(int i=l;i<=r;i++)temp[--val[arr[i]]]=arr[i];
 
-    return;
+    return ;
 }
 
 int main(void)
