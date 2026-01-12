@@ -1,5 +1,5 @@
-/*计数排序 时间复杂度n 空间复杂度 n+v*/
-/**/
+/*计数排序 时间复杂度n 空间复杂度 n+v 稳定*/
+/*板子升序*/
 #include<iostream>
 
 using namespace std;

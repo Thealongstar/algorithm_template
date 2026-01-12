@@ -1,3 +1,5 @@
+/*插入排序 时间复杂度：n*n 空间复杂度：1 稳定*/
+/*板子升序*/
 #include<iostream>
 
 using namespace std;

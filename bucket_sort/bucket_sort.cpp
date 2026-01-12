@@ -1,3 +1,5 @@
+/*桶排序 时间复杂度：n+n*n/k+k 空间复杂度：n+v 稳定*/
+/*板子升序*/
 #include<iostream>
 #include<vector>
 
