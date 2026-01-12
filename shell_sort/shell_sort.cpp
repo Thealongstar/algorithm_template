@@ -10,16 +10,18 @@ void shell_sort(int arr[],int l,int r)
 {
     if(l>=r)return;
 
-    unsigned h=r-l+1>>1;
+    int h = r-l+1>>1;
 
     while(h>=1)
     {
         for(int i=h;i<=r;i++)
             for(int j=i;j>=l+h&&arr[j]<arr[j-h];j-=h)
-            swap(arr[j],arr[j-h]);
+                swap(arr[j],arr[j-h]);
+        
         h/=2;
     }
 }
+
 int main(void)
 {
     scanf("%d",&n);
