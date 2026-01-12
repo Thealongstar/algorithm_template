@@ -17,9 +17,9 @@ void choice_sort(int arr[],int l,int r)
         int Min=i;
         for(int j=i;j<=r;j++)
             if(arr[Min]>arr[j])
-            Max=j;
+            Min=j;
 
-        swap(arr[i],arr[Max]);
+        swap(arr[i],arr[Min]);
     }
 }
 
@@ -29,7 +29,7 @@ int main(void)
 
     for(int i=0;i<n;i++)scanf("%d",&arr[i]);
 
-    choice_sort(arr,0,n-1);
+    choice_sort(arr,n/2,n-1);
 
     for(int i=0;i<n;i++)printf("%d ",arr[i]);
 

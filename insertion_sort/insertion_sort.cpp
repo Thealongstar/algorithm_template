@@ -32,7 +32,7 @@ int main(void)
 
     for(int i=0;i<n;i++)scanf("%d",&arr[i]);
 
-    insert_sort(arr,0,n-1);
+    insert_sort(arr,n/2,n-1);
 
     for(int i=0;i<n;i++)printf("%d ",arr[i]);
 
